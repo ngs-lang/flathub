@@ -1,12 +1,10 @@
 app-id: org.ngs-lang.ngs
-cleanup: /build
-command: /bin/ngs
 modules:
   - name: ngs
     buildsystem: simple
     build-commands: 
       - ./install-linux.sh
-    cleanup:
+    cleanup: /build
     sources:
       - type: git
         url: https://github.com/ngs-lang/ngs

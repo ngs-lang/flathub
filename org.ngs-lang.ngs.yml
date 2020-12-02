@@ -1,10 +1,13 @@
 app-id: org.ngs-lang.ngs
+runtime: org.freedesktop.Platform
+sdk: org.freedesktop.Sdk
 modules:
   - name: ngs
     buildsystem: simple
     build-commands: 
       - ./install-linux.sh
     cleanup: /build
+    command: /bin/ngs
     sources:
       - type: git
         url: https://github.com/ngs-lang/ngs
